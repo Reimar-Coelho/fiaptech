@@ -1,0 +1,80 @@
+* {
+    background-color: rgb(19, 19, 19);
+}
+
+nav {
+    display: flex;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+}
+nav img {
+    width: 80px;
+}
+
+.nav-links ul li {
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: .3s;
+}
+.nav-links ul li #login{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 6px 30px;
+    border-color: #ffffff;
+
+    transition: .3s;
+}
+
+.nav-links ul li a:hover{
+    color: #c7ffb1;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 0 0 15px #c7ffb1;
+}
+.nav-links ul li #login:hover{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 6px 30px;
+    color: #c7ffb1;
+    border-color: #c7ffb1;
+    background-color: #0d3000;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+
+.div1 {
+    color:#610725;
+}
+
+body::-webkit-scrollbar {
+    background: #610725;
+    height: 8px;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #ed145b;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
