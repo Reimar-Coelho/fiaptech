@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;700;800;900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/73211ee90d8a1efc03c14067bf469d99?family=MetronicSlabPro:wght@100;200;300;400;500;700;800;900&family=MetronicSlabPro:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;700;800;900&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    background: #070707;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo p{
+    color: white;
+    margin-left: 1rem;
+}
+
+nav img {
+    margin-left: 1rem;
+    width: 120px;
+    height: 30px;
+}
+
+.nav-links ul li {
+    font-weight: lighter;
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1.2rem;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: .3s;
+}
+.nav-links ul li #login{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 6px 30px;
+    border-color: #ffffff;
+    letter-spacing: 0.1em;
+
+    transition: .3s;
+}
+
+.nav-links ul li a:hover{
+    color: #3cc7b2;
+    text-decoration: none;
+    font-size: 16px;
+    text-shadow: 0 0 15px #3cc7b2;
+}
+.nav-links ul li #login:hover{
+    color: #3cc7b2;
+    border-color: #3cc7b2;
+    background-color: #000000;
+    text-shadow: none;
+    letter-spacing: 0.3em;
+}
+
+.head1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Metronic Slab Pro';
+}
+
+.head1 h1{
+    font-family: 'Metronic Slab Pro';
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    background: -webkit-linear-gradient(-50deg, rgba(183,255,0,0.8) 30%, #00fdd0 55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.div1 {
+    color:#610725;
+}
+
+body::-webkit-scrollbar {
+    background: #610725;
+    height: 8px;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #ed145b;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
