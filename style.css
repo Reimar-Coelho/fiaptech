@@ -5,7 +5,23 @@
 
 * {
     font-family: 'Montserrat';
-    background: #070707;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.sec1 {
+    height: 100%;
+    background-image: url(img/back.png);  
+}
+
+.sec1 .sigma {
+    margin-top: 9rem;
+    width: 70%;
+    position: absolute;
+    z-index: 0;
 }
 
 
@@ -13,7 +29,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
 }
 
 .logo{
@@ -46,7 +61,7 @@ nav img {
 
     transition: .3s;
 }
-.nav-links ul li #login{
+.nav-links ul #login{
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -64,10 +79,10 @@ nav img {
     text-decoration: none;
     text-shadow: 0 0 15px #3cc7b2;
 }
-.nav-links ul li #login:hover{
+.nav-links ul #login:hover{
     color: #3cc7b2;
     border-color: #3cc7b2;
-    background-color: #000000;
+    background-color: transparent;
     text-shadow: none;
     letter-spacing: 0.3em;
 }
@@ -81,6 +96,8 @@ nav img {
 }
 
 .head1 h1{
+    z-index: 1;
+    margin-top: 6rem;
     font-family: 'Metronic Slab Pro';
     font-weight: 100;
     letter-spacing: 0.05em;
@@ -88,12 +105,25 @@ nav img {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2.4rem;
 }
 
 
 .div1 {
     color:#610725;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 h1 {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-weight: lighter;
+    text-shadow: 0 0 15px #000000;
 }
 
 body::-webkit-scrollbar {
