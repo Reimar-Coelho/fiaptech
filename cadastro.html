@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <div class="texto">
+                    <h2 id="voltar" onclick="login()"><i class="ri-arrow-left-s-line"></i></h2>
+                    <h2 id="log">Cadastro</h2>
+                </div>
+                
+                <form action="/cadastro.html" method="post">
+                    <div  style="display: flex;">
+                        <div>
+                            <div class="inputbox">
+                                <ion-icon name="person"></ion-icon>
+                                <input name="nome" type="text" required>
+                                <label for="">Nome</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="mail"></ion-icon>
+                                <input name="email" type="email" required>
+                                <label for="">Email</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="lock-closed"></ion-icon>
+                                <input name="password" type="password" required>
+                                <label for="">Senha</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="loginButton" type="submit">REGISTRAR</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    <script src="public/scripts/script.js"></script>
+</body>
+</html>

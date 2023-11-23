@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            
+            <div class="form-value">
+                <form action="/login.html" method="post">
+                    <div class="texto">
+                        <h2 id="voltar" onclick="index()"><i class="ri-arrow-left-s-line"></i></h2>
+                        <h2 id="log">Login</h2>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input name="email" type="text" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input name="password" type="password" required>
+                        <label for="">Senha</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Lembrar-me
+                    </div>
+                    <button id="loginButton" type="submit">LOGIN</button>
+                    <div class="register">
+                        <p>Não tem uma conta? | <a href="cadastro.html">Registrar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="public/scripts/script.js"></script>
+</body>
+</html>
