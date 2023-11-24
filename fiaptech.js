@@ -73,7 +73,54 @@ app.post("/login", async(req, res)=>{
     }
 })
 
-app.get("/", async(req, res)=> {
+const ProdutoSchema = new mongoose.Schema({
+    codigo: { type: String, required: true },
+    descricao: { type: String},
+    fornecedor: { type: String},
+    dataFabricacao: { type: Date},
+    quantidadeEstoque: { type: Number}
+});
+
+const Produto = mongoose.model("Produto", ProdutoSchema);
+
+app.post("/cadprodutos", async (req, res) => {
+    const codigo = req.body.codigo;
+    const descricao = req.body.descricao;
+    const fornecedor = req.body.fornecedor;
+    const dataFabricacao = req.body.dataFabricacao;
+    const quantidadeEstoque = req.body.quantidadeEstoque;
+  
+    if(codigo == null || descricao == null || fornecedor == null || dataFabricacao == null || quantidadeEstoque == null){
+      return res.status(400).json({error : "Preencha todos os campos"});
+    }
+  
+    const produtoExiste = await Produto.findOne({codigo : codigo});
+  
+    if(produtoExiste){
+      return res.status(400).json({error : "O produto informado já existe"});
+    }
+  
+    
+    const produto = new Produto({
+      codigo: codigo,
+      descricao: descricao,
+      fornecedor: fornecedor,
+      dataFabricacao: dataFabricacao,
+      quantidadeEstoque: quantidadeEstoque
+    });
+  
+    try {
+      const newProduto = await produto.save();
+      res.json({ error: null, msg: "Cadastro ok", ProdutoId: newProduto._id });
+    } catch (error) {}
+});
+
+
+
+
+
+
+app.get("/index.html", async(req, res)=> {
     res.sendFile(__dirname + "/index.html")
 })
 
@@ -83,6 +130,14 @@ app.get("/cadastro.html", async(req, res)=> {
 
 app.get("/login.html", async(req, res)=>{
     res.sendFile(__dirname + "/login.html")
+})
+
+app.get("/cadprodutos.html", async(req, res)=>{
+    res.sendFile(__dirname + "/cadprodutos.html")
+})
+
+app.get("/sobre.html", async(req, res)=>{
+    res.sendFile(__dirname + "/sobre.html")
 })
 
 app.listen(port, ()=>{
