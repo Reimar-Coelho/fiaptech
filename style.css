@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;700;800;900&display=swap');
-@import url('https://db.onlinewebfonts.com/c/73211ee90d8a1efc03c14067bf469d99?family=MetronicSlabPro:wght@100;200;300;400;500;700;800;900&family=MetronicSlabPro:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;700;800;900&display=swap');
 
 * {
@@ -10,20 +9,14 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #0c0c0c;
 }
 
 .sec1 {
     height: 100%;
-    background-image: url(img/back.png);  
+    background-position: 100%;
+    background-size: cover;
 }
-
-.sec1 .sigma {
-    margin-top: 9rem;
-    width: 70%;
-    position: absolute;
-    z-index: 0;
-}
-
 
 nav {
     display: flex;
@@ -55,16 +48,17 @@ nav img {
     position: relative;
 }
 .nav-links ul li a{
-    color: #ffffff;
+    color: rgb(185, 185, 185);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 300;
 
     transition: .3s;
 }
 .nav-links ul #login{
     color: #ffffff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     border-style: solid;
     border-width: 1px;
     padding: 6px 30px;
@@ -75,37 +69,113 @@ nav img {
 }
 
 .nav-links ul li a:hover{
-    color: #3cc7b2;
+    color: #ed145b;
     text-decoration: none;
-    text-shadow: 0 0 15px #3cc7b2;
+    text-shadow: 0 0 15px #ed145b;
 }
 .nav-links ul #login:hover{
-    color: #3cc7b2;
-    border-color: #3cc7b2;
+    color: #ed145b;
+    border-color: #ed145b;
     background-color: transparent;
     text-shadow: none;
     letter-spacing: 0.3em;
 }
+
+.prod {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.prod .plinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.prod .plinks #notebooks a{
+    text-decoration: none;
+    color: #ed145b;
+    margin-left: 1rem;
+
+    transition: 0.3s;
+}
+.prod .plinks #notebooks a:hover{
+    text-decoration: none;
+    color: #3cc7b2;
+    margin-left: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.prod .plinks #celulares a{
+    text-decoration: none;
+    color: #ed145b;
+    margin-left: 1rem;
+
+    transition: 0.3s;
+}
+.prod .plinks #celulares a:hover{
+    text-decoration: none;
+    color: #3cc7b2;
+    margin-left: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.prod .plinks #relogios a{
+    text-decoration: none;
+    color: #ed145b;
+    margin-left: 1rem;
+
+    transition: 0.3s;
+}
+.prod .plinks #relogios a:hover{
+    text-decoration: none;
+    color: #3cc7b2;
+    margin-left: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.prod .plinks #acessorios a{
+    text-decoration: none;
+    color: #ed145b;
+    margin-left: 1rem;
+
+    transition: 0.3s;
+}
+.prod .plinks #acessorios a:hover{
+    text-decoration: none;
+    color: #3cc7b2;
+    margin-left: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
 
 .head1 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Metronic Slab Pro';
 }
 
 .head1 h1{
     z-index: 1;
     margin-top: 6rem;
-    font-family: 'Metronic Slab Pro';
     font-weight: 100;
     letter-spacing: 0.05em;
-    background: -webkit-linear-gradient(-50deg, rgba(183,255,0,0.8) 30%, #00fdd0 55%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3cc7b2;
     font-size: 2.4rem;
+    font-weight: 600;
 }
 
 
@@ -124,6 +194,15 @@ nav img {
     color: #ffffff;
     font-weight: lighter;
     text-shadow: 0 0 15px #000000;
+}
+
+#circulo {
+    position: absolute;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+
 }
 
 body::-webkit-scrollbar {
