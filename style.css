@@ -183,7 +183,6 @@ nav img {
 
 .div1 {
     color:#610725;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -272,7 +271,7 @@ nav img {
 }
 /*CARD1*/
 .app .card1{
-    background-image: url(img/fire.jpg);
+    background-image: url(img/smartphone.jpg);
     background-position: 40%;
     background-size: cover;
     height: 50rem;
@@ -329,7 +328,6 @@ nav img {
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: white;
-    font-family: 'Poppins';
     letter-spacing: 0.2em;
     text-decoration: none;
     font-size: 16px;
@@ -346,8 +344,8 @@ nav img {
     border-style: solid;
     border-width: 1px;
     padding: 5px 30px;
-    color: #c7ffb1;
-    border-color: #c7ffb1;
+    color: #ed145b;
+    border-color: #ed145b;
     
     text-decoration: none;
     font-size: 16px;
@@ -357,7 +355,7 @@ nav img {
 
 /*CARD2*/
 .app .card2{
-    background-image: url(img/monke.jpg);
+    background-image: url(img/notebook.jpg);
     background-position: 60%;
     background-size: cover;
     height: 50rem;
@@ -413,7 +411,6 @@ nav img {
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: white;
-    font-family: 'Poppins';
     letter-spacing: 0.2em;
     text-decoration: none;
     font-size: 16px;
@@ -430,8 +427,8 @@ nav img {
     border-style: solid;
     border-width: 1px;
     padding: 5px 30px;
-    color: #c7ffb1;
-    border-color: #c7ffb1;
+    color: #ed145b;
+    border-color: #ed145b;
     
     text-decoration: none;
     font-size: 16px;
@@ -439,7 +436,9 @@ nav img {
 }
 /*CARD3*/
 .app .card3{
-    background-image: url(img/water.jpg);
+    background-image: url(img/smartwatch.jpg);
+    background-position: 50%;
+    background-size: cover;
     height: 50rem;
     padding: 3rem 2rem;
     flex-direction: column;
@@ -495,7 +494,6 @@ nav img {
     background-color: transparent;
     backdrop-filter: blur(8px);
     color: white;
-    font-family: 'Poppins';
     letter-spacing: 0.2em;
     text-decoration: none;
     font-size: 16px;
@@ -512,8 +510,8 @@ nav img {
     border-style: solid;
     border-width: 1px;
     padding: 5px 30px;
-    color: #c7ffb1;
-    border-color: #c7ffb1;
+    color: #ed145b;
+    border-color: #ed145b;
     
     text-decoration: none;
     font-size: 16px;
@@ -618,11 +616,6 @@ footer .column > a:hover{
     }
     .app{
         grid-template-columns: repeat(2, 1fr);
-    }
-    .sec3 {
-        background-position: 39%;
-        background-size: cover;
-        background-image: url(img/mimindo.png);
     }
     footer{
         grid-template-columns: 1fr 200px;
